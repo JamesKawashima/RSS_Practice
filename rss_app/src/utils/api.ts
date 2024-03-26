@@ -1,4 +1,4 @@
-import { Post } from "@/interfaces/post"
+import { Post } from "@/interfaces/Post"
 import fs from "fs"
 import matter from "gray-matter"
 import { join } from "path"
@@ -14,7 +14,6 @@ export function getPostBySlug(slug: string) {
     const fullPath = join(postsDirectory, `${realSlug}.md`);
     const fileContents = fs.readFileSync(fullPath, "utf8");
     const { data, content } = matter(fileContents);
-
     return {...data, slug: realSlug, content } as Post;
 }
 

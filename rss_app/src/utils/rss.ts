@@ -1,8 +1,11 @@
+import { Post } from "@/interfaces/Post";
 import fs from "fs";
 import { title } from "process";
 import RSS from "rss";
+import { AuthorsToString } from "./parsing";
 
-export default async function generateRssFeed(allPosts: {title: string, excerpt: string, slug: string, author: string, date: string}[]){
+export default async function generateRssFeed(allPosts: Post[]){
+    console.log("generating rss feed");
     const site_url = 
         process.env.NODE_ENV === "production"
             ? "https://rss.tanzanet.ca"
@@ -21,6 +24,7 @@ export default async function generateRssFeed(allPosts: {title: string, excerpt:
     const feed = new RSS(feedOptions);
 
     allPosts.map((post) => {
+        // console.log(JSON.stringify(post.slug));
         feed.item({
             title: post.title,
             description: post.excerpt,
@@ -30,5 +34,5 @@ export default async function generateRssFeed(allPosts: {title: string, excerpt:
         });
     });
 
-    fs.writeFileSync("/rss.xml", feed.xml({ indent: true }));
+    fs.writeFileSync("./public/rss.xml", feed.xml({ indent: true }));
 }

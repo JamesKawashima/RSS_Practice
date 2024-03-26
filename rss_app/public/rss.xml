@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Blog posts | RSS Feed]]></title>
+        <description><![CDATA[Welcome to this blog posts!]]></description>
+        <link>http://localhost:3000</link>
+        <image>
+            <url>http://localhost:3000/logo.jpg</url>
+            <title>Blog posts | RSS Feed</title>
+            <link>http://localhost:3000</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Tue, 26 Mar 2024 01:51:56 GMT</lastBuildDate>
+        <atom:link href="http://localhost:3000/rss.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Tue, 26 Mar 2024 01:51:56 GMT</pubDate>
+        <copyright><![CDATA[All rights reserved 2024]]></copyright>
+        <item>
+            <title><![CDATA[Dynamic Routing and Static Generation]]></title>
+            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.]]></description>
+            <link>http://localhost:3000/posts/dynamic-routing</link>
+            <guid isPermaLink="true">http://localhost:3000/posts/dynamic-routing</guid>
+            <dc:creator><![CDATA[[object Object]]]></dc:creator>
+            <pubDate>Mon, 16 Mar 2020 05:35:07 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Learn How to Pre-render Pages Using Static Generation with Next.js]]></title>
+            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.]]></description>
+            <link>http://localhost:3000/posts/hello-world</link>
+            <guid isPermaLink="true">http://localhost:3000/posts/hello-world</guid>
+            <dc:creator><![CDATA[[object Object]]]></dc:creator>
+            <pubDate>Mon, 16 Mar 2020 05:35:07 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Preview Mode for Static Generation]]></title>
+            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.]]></description>
+            <link>http://localhost:3000/posts/preview</link>
+            <guid isPermaLink="true">http://localhost:3000/posts/preview</guid>
+            <dc:creator><![CDATA[[object Object]]]></dc:creator>
+            <pubDate>Mon, 16 Mar 2020 05:35:07 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

@@ -1,11 +1,12 @@
-import { type Author } from "./author";
+import { Author } from "./Author";
+
 
 export type Post = {
     slug: string;
     title: string;
     date: string
     coverImage: string;
-    authors: Author[];
+    author: string;
     excerpt: string;
     content: string;
 }
